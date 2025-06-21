@@ -1,0 +1,8 @@
+{
+    "Contact": true,
+    "Config": true,
+    "Inventory": true,
+    "Cms": true,
+    "Sales": true,
+    "Accounting": true
+}

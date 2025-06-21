@@ -1,0 +1,4855 @@
+/*
+
+-------------------------------------------------------------------------------------
+
+* Template Name    : Mediyot - Healthcare, Medical & Hospital Html5 Landing Page    *
+
+* Author           : Vrishank Softtech                                              *
+
+* Version          : 1.0.0                                                          *
+
+* File Description : Main Css file of the template                                  *
+
+*------------------------------------------------------------------------------------
+
+*/
+
+
+
+/***********************
+
+    1.BASIC           *
+
+    2.HELPER          *
+
+    3.NAVBAR          *
+
+    4.HOME            *
+
+    5.FEATURES        *
+
+    6.ABOUT US        *
+
+    7.OUR DEPARTMENTS *
+
+    8.REVIEWS         *
+
+    9.OUR TEAM        *
+
+    10.PREMISES       *
+
+    11.APPOINTMENT    *
+
+    12.FAQ's          *
+
+    13.FOOTER         *
+
+    14.RESPONSIVE     *
+
+************************/
+
+
+
+/*======================
+
+        1.BASIC
+
+========================*/
+
+
+
+body {
+
+    font-family: "Source Sans Pro", sans-serif;
+
+    overflow-x: hidden;
+
+    font-weight: 400;
+
+    background-color: #fff;
+
+    animation: pageAnimation ease 2s;
+
+    animation-iteration-count: 1;
+
+    animation-fill-mode: forwards;
+
+}
+
+
+
+@keyframes pageAnimation {
+
+    0% {
+
+        opacity: 0;
+
+    }
+
+
+
+    100% {
+
+        opacity: 1;
+
+    }
+
+}
+
+
+
+h1,
+
+h2,
+
+h3,
+
+h4,
+
+h5,
+
+h6 {
+
+    font-family: "Source Sans Pro", sans-serif;
+
+    font-weight: 700;
+
+}
+
+
+
+.sub-title {
+
+    font-size: 20px;
+
+}
+
+
+
+h4 {
+
+    font-size: 24px;
+
+    font-weight: 600;
+
+    color: #161e39;
+
+    line-height: 1.3em;
+
+    position: relative;
+
+}
+
+
+
+p {
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+}
+
+
+
+a,
+
+a:hover,
+
+a:focus,
+
+button,
+
+button:focus {
+
+    text-decoration: none !important;
+
+    outline: none !important;
+
+    box-shadow: none !important;
+
+}
+
+
+
+::selection {
+
+    background: rgba(166, 175, 189, 0.3);
+
+}
+
+
+
+::-moz-selection {
+
+    background: rgba(166, 175, 189, 0.3);
+
+}
+
+
+
+.back_top {
+
+    border: 2px solid #448aff;
+
+    text-align: center;
+
+    position: fixed;
+
+    background: #fff;
+
+    bottom: 20px;
+
+    right: 20px;
+
+    height: 35px;
+
+    width: 35px;
+
+    display: none;
+
+    transition: all 0.5s;
+
+    border-radius: 10px !important;
+
+    animation: BounceAnimation 4s infinite;
+
+    -webkit-animation: BounceAnimation 4s infinite;
+
+    -moz-animation: BounceAnimation 4s infinite;
+
+    -o-animation: BounceAnimation 4s infinite;
+
+    z-index: 99;
+
+}
+
+
+
+.back_top i {
+
+    font-size: 30px;
+
+    color: #448aff;
+
+    line-height: 30px;
+
+    display: block;
+
+}
+
+
+
+.mb-30 {
+
+    margin-bottom:30px;
+
+}
+
+
+
+@-webkit-keyframes BounceAnimation {
+
+    0%, 20%, 50%, 80%, 100% {
+
+        -webkit-transform: translateY(0);
+
+    }
+
+
+
+    40% {
+
+        -webkit-transform: translateY(-20px);
+
+    }
+
+
+
+    60% {
+
+        -webkit-transform: translateY(-10px);
+
+    }
+
+}
+
+
+
+@-moz-keyframes BounceAnimation {
+
+    0%, 20%, 50%, 80%, 100% {
+
+        -moz-transform: translateY(0);
+
+    }
+
+
+
+    40% {
+
+        -moz-transform: translateY(-20px);
+
+    }
+
+
+
+    60% {
+
+        -moz-transform: translateY(-10px);
+
+    }
+
+}
+
+
+
+@keyframes BounceAnimation {
+
+    0%, 20%, 50%, 80%, 100% {
+
+        transform: translateY(0);
+
+    }
+
+
+
+    40% {
+
+        transform: translateY(-20px);
+
+    }
+
+
+
+    60% {
+
+        transform: translateY(-10px);
+
+    }
+
+}
+
+
+
+/*==========================
+
+        2.HELPER
+
+============================*/
+
+
+
+.font-white {
+
+    color: #fff;
+
+}
+
+
+
+.section {
+
+    padding-top: 60px;
+
+    padding-bottom: 60px;
+
+    background-color: #fff;
+
+    position: relative;
+
+}
+
+
+
+.section-title h2 {
+
+    position: relative;
+
+}
+
+
+
+.section-subtitle {
+
+    font-size: 16px;
+
+    max-width: 550px;
+
+    line-height: 25px;
+
+    padding-top: 0;
+
+}
+
+
+
+.z-index-9 {
+
+    position: relative;
+
+    z-index: 9;
+
+}
+
+
+
+.z-index {
+
+    z-index: 2;
+
+}
+
+
+
+.inverse-bg {
+
+    background-color: #f7f9fb;
+
+}
+
+
+
+.btn {
+
+    padding: 12px 28px;
+
+}
+
+
+
+.btn-sm {
+
+    padding: 8px 15px;
+
+}
+
+
+
+.btn-rounded {
+
+    -webkit-border-radius: 30px !important;
+
+    -moz-border-radius: 30px !important;
+
+    border-radius: 30px !important;
+
+}
+
+
+
+.btn-white {
+
+    background-color: #fff;
+
+    color: #000 !important;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+    min-width: 140px;
+
+    border-radius: 40px;
+
+    -moz-border-radius: 40px;
+
+    -webkit-border-radius: 40px;
+
+    transition: all 0.5s;
+
+    text-transform: capitalize;
+
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+
+    -moz-box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+
+    box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+
+}
+
+
+
+.btn {
+
+    font-size: 14px;
+
+    text-align: center;
+
+    padding: 0;
+
+    text-transform: uppercase;
+
+    font-weight: 600;
+
+    height: 46px;
+
+    line-height: 46px;
+
+}
+
+
+
+.btn-white:hover,
+
+.btn-white:focus,
+
+.btn-white:active,
+
+.btn-white.active,
+
+.btn-white.focus,
+
+.btn-white:active,
+
+.btn-white:focus,
+
+.btn-white:hover,
+
+.open > .dropdown-toggle.btn-white {
+
+    color: #fff !important;
+
+}
+
+
+
+/*==========================
+
+        3.NAVBAR
+
+============================*/
+
+
+
+.custom-nav {
+
+    background-color: transparent;
+
+    width: 100%;
+
+    padding: 18px 0px;
+
+    -webkit-border-radius: 0px;
+
+    -moz-border-radius: 0px;
+
+    border-radius: 0px;
+
+    margin-bottom: 0px;
+
+    z-index: 999;
+
+    border-bottom: 1px solid #ffffff1a;
+
+}
+
+
+
+    .custom-nav .container-fluid {
+
+        width: 90%;
+
+    }
+
+
+
+    .custom-nav.sticky-header {
+
+        background-color: #fff;
+
+        box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+
+    }
+
+
+
+    .custom-nav .navbar-nav li a {
+
+        position: relative;
+
+        color: rgba(255, 255, 255, 0.6);
+
+        font-size: 16px;
+
+        font-weight: 600;
+
+        padding: 6px 16px !important;
+
+        margin: 0 3px;
+
+    }
+
+    
+/*      .custom-nav .navbar-nav li a::after,*/
+     .custom-nav .navbar-nav li a::before {
+
+        position: absolute;
+
+        content: '';
+
+        width: 24px;
+
+        height: 2px;
+
+        background-color: #fff;
+
+        left: 50%;
+        margin-left: -12px;
+
+        bottom: 0px;
+
+        opacity: 0;
+
+        -webkit-transition: all .3s ease-out 0s;
+
+        -moz-transition: all .3s ease-out 0s;
+
+        -o-transition: all .3s ease-out 0s;
+
+        transition: all .3s ease-out 0s;
+
+    }
+
+    
+
+    /* .custom-nav .navbar-nav li a::after {
+
+        left: auto;
+
+        right: 50%;
+
+    }*/
+
+
+
+    .custom-nav .navbar-nav li.active a::before, 
+/*    .custom-nav .navbar-nav li.active a::after,
+ .custom-nav .navbar-nav li:hover a::after,*/
+    .custom-nav .navbar-nav li:hover a::before  {
+
+        opacity: 1;
+
+    }
+
+
+
+.navbar-toggler {
+
+    color: #448aff;
+
+    font-size: 28px;
+
+    margin-top: 2px;
+
+    margin-bottom: 0px;
+
+}
+
+
+
+.custom-nav.sticky-header .navbar-nav li a {
+
+    color: rgba(0, 0, 0, 0.6) !important;
+
+}
+
+
+/* .custom-nav.sticky-header .navbar-nav li a::after, */
+    .custom-nav.sticky-header .navbar-nav li a::before {
+
+            background-color: #448aff;
+
+        }
+
+
+
+.navbar-toggle {
+
+    color: #ffffff;
+
+    font-size: 24px;
+
+    margin-top: 5px;
+
+    margin-bottom: 0px;
+
+}
+
+
+
+.custom-nav .navbar-nav li.active a,
+
+.custom-nav .navbar-nav li:hover a,
+
+.custom-nav .navbar-nav li:active a {
+
+    color: #fff;
+
+}
+
+
+
+.custom-nav.sticky-header .navbar-nav li.active a,
+
+.custom-nav.sticky-header .navbar-nav li:hover a,
+
+.custom-nav.sticky-header .navbar-nav li:active a {
+
+    color: #448aff !important;
+
+}
+
+
+
+.nav .open > a,
+
+.nav .open > a:focus,
+
+.nav .open > a:hover {
+
+    background-color: transparent;
+
+    border-color: #0ebdca;
+
+}
+
+
+
+.brand-logo .logo-light {
+
+    display: inline-block;
+
+}
+
+
+
+.sticky-header .brand-logo .logo-dark {
+
+    display: inline-block;
+
+}
+
+
+
+.sticky-header .brand-logo .logo-light {
+
+    display: none;
+
+}
+
+
+
+.brand-logo .logo-dark {
+
+    display: none;
+
+}
+
+
+
+.custom-nav .navbar-brand.brand-logo img {
+
+    height: 28px;
+
+}
+
+
+
+.contact_btn .btn-sm {
+
+    background-color: #fff;
+
+    border: 2px solid #fff;
+
+    color: #448aff;
+
+    font-size: 14px;
+
+    text-transform: capitalize;
+
+    font-weight: 600;
+
+    min-width: 120px;
+
+    height: 40px;
+
+    border-radius: 40px;
+
+    display: flex;
+
+    justify-content: center;
+
+    transition:none;
+
+    align-items: center;
+
+    letter-spacing: 1px;
+
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15) !important;
+
+    -moz-box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15) !important;
+
+    box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15) !important;
+
+}
+
+
+
+.sticky-header .contact_btn .btn-sm {
+
+    background: #448aff;
+
+    border: 2px solid #448aff;
+
+    color: #fff;
+
+}
+
+
+
+.contact_btn .btn-sm:hover {
+
+    color: #fff;
+
+    background-color: #000;
+
+    border: 2px solid #000;
+
+}
+
+
+
+/*==========================
+
+        4.HOME
+
+============================*/
+
+
+
+.home-bg, .home-section {
+
+    position: relative;
+
+}
+
+
+
+.home-slider {
+
+    position: relative;
+
+    z-index: 9;
+
+}
+
+
+
+.home-bg::before {
+
+    content: "";
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    position: absolute;
+
+    opacity: 0.75;
+
+    z-index: 1;
+
+}
+
+
+
+.home-bg .heading {
+
+    color: #fff;
+
+    font-size: 60px;
+
+    line-height: 60px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.home-bg .para-sec {
+
+    font-size: 20px;
+
+    color: rgba(255, 255, 255, 0.85);
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.home-bg.waves-bg {
+
+    margin: 0 0 0;
+
+    padding: 8rem 0 0 0;
+
+}
+
+
+
+.hero-bg {
+
+    background-image: url(../images/hero-bg.png);
+
+    opacity: 1;
+
+    top: 0;
+
+    left: 0;
+
+    height: 100%;
+
+    width: 100%;
+
+}
+
+
+
+.bg-gradient {
+
+    background-color: #448aff;
+
+    background-image: url(../images/hero-bg.png);   
+
+}
+
+   
+
+@keyframes owl-content-fadeInUp {
+
+    from {
+
+        transform: translate3d(0, 40px, 0);
+
+    }
+
+
+
+    to {
+
+        transform: translate3d(0, 0, 0);
+
+        opacity: 1;
+
+    }
+
+}
+
+
+
+@-webkit-keyframes owl-content-fadeInUp {
+
+    from {
+
+        transform: translate3d(0, 40px, 0);
+
+    }
+
+
+
+    to {
+
+        transform: translate3d(0, 0, 0);
+
+        opacity: 1;
+
+    }
+
+}
+
+
+
+@keyframes owl-img-fadeInRight {
+
+    from {
+
+        transform: translateX(40px);
+
+    }
+
+
+
+    to {
+
+        transform: translateX(0);
+
+        opacity: 1;
+
+    }
+
+}
+
+
+
+@-webkit-keyframes owl-img-fadeInRight {
+
+    from {
+
+        transform: translateX(40px);
+
+    }
+
+
+
+    to {
+
+        transform: translateX(0);
+
+        opacity: 1;
+
+    }
+
+}
+
+
+
+.owl-item.active .content-fadeInUp {
+
+    animation-duration: 1s;
+
+    animation-fill-mode: both;
+
+    -webkit-animation-duration: 1s;
+
+    -webkit-animation-fill-mode: both;
+
+    opacity: 0;
+
+    animation-name: owl-content-fadeInUp;
+
+    -webkit-animation-name: owl-content-fadeInUp;
+
+}
+
+
+
+.owl-item.active .img-fadeInRight {
+
+    animation-duration: 1s;
+
+    animation-fill-mode: both;
+
+    -webkit-animation-duration: 1s;
+
+    -webkit-animation-fill-mode: both;
+
+    opacity: 0;
+
+    animation-name: owl-img-fadeInRight;
+
+    -webkit-animation-name: owl-img-fadeInRight;
+
+}
+
+
+
+.home-slider .owl-dots,
+
+.review-slider .owl-dots {
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+}
+
+
+
+.home-slider .owl-dot,
+
+.review-slider .owl-dot {
+
+    background: rgba(255, 255, 255, 0.4) !important;
+
+    height: 10px;
+
+    width: 10px;
+
+    -webkit-border-radius: 10px;
+
+    -moz-border-radius: 10px;
+
+    border-radius: 10px;
+
+    margin: 0 5px;
+
+}
+
+
+
+    .home-slider .owl-dot.active,
+
+    .review-slider .owl-dot.active {
+
+        background: #fff !important;
+
+    }
+
+
+
+.hero-waves {
+
+   height: 120px;
+
+   position: relative;
+
+}
+
+
+
+.hero-waves .wave {
+
+   position: absolute;
+
+   left: 0;
+
+   right: 0;
+
+   top: 0;
+
+   z-index: 1;
+
+}
+
+
+
+.hero-waves .wave + .wave {
+
+   z-index: 2;
+
+}
+
+
+
+/*==========================
+
+        5.FEATURES
+
+============================*/
+
+.features .ftr-icon-box {
+
+    padding: 50px 20px;
+
+    margin-top: 32px;
+
+    margin-bottom: 30px;
+
+    text-align: center;
+
+    height: 200px;
+
+    position: relative;
+
+    background: #fff;
+
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.features .icon {
+
+    position: absolute;
+
+    top: -36px;
+
+    left: calc(50% - 36px);
+
+    transition: 0.2s;
+
+    border-radius: 50%;
+
+    border: 5px solid #fff;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    width: 70px;
+
+    height: 70px;
+
+    background: #448aff;
+
+}
+
+
+
+.features .icon i {
+
+    color: #fff;
+
+    font-size: 32px;
+
+}
+
+
+
+.features .title {
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+
+    font-size: 18px;
+
+}
+
+
+
+.features .ftr-icon-box:hover .icon {
+
+    background: #fff;
+
+    border: 2px solid #448aff;
+
+}
+
+
+
+    .features .ftr-icon-box:hover .icon i {
+
+      color: #448aff;
+
+    }
+
+
+
+    .features .ftr-icon-box:hover .title a {
+
+      color: #448aff;
+
+    }
+
+
+
+.features .description {
+
+    line-height: 24px;
+
+    font-size: 14px;
+
+}
+
+
+
+/*======================
+
+        6.ABOUT US
+
+========================*/
+
+.aboutus .icon-boxes h4 {
+
+    font-size: 18px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.aboutus .aboutus-icon-box {
+
+    margin-top: 30px;
+
+}
+
+
+
+    .aboutus .aboutus-icon-box .icon {
+
+        border: 2px solid #448aff;
+
+        border-radius: 50px;
+
+        float: left;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        min-width: 64px;
+
+        min-height: 64px;
+
+        transition: 0.5s;
+
+        background: #fff;
+
+    }
+
+
+
+    .aboutus .aboutus-icon-box .icon i {
+
+        font-size: 32px;
+
+        color: #448aff;
+
+    }
+
+
+
+    .aboutus .aboutus-icon-box:hover .icon {
+
+        background: #448aff;
+
+        border-color: #448aff;
+
+    }
+
+
+
+    .aboutus .aboutus-icon-box:hover .icon i {
+
+        color: #fff;
+
+    }
+
+
+
+    .aboutus .aboutus-icon-box .title {
+
+        font-weight: 700;
+
+        margin-bottom: 10px;
+
+    }
+
+
+
+    .aboutus .aboutus-icon-box .description {
+
+        line-height: 24px;
+
+        font-size: 14px;
+
+        text-align: left;
+
+        margin-bottom: 0;
+
+    }                       
+
+
+
+@-webkit-keyframes pulsate-btn {
+
+  0% {
+
+    transform: scale(0.6, 0.6);
+
+    opacity: 1;
+
+  }
+
+  100% {
+
+    transform: scale(1, 1);
+
+    opacity: 0;
+
+  }
+
+}
+
+
+
+@keyframes pulsate-btn {
+
+  0% {
+
+    transform: scale(0.6, 0.6);
+
+    opacity: 1;
+
+  }
+
+  100% {
+
+    transform: scale(1, 1);
+
+    opacity: 0;
+
+  }
+
+}
+
+
+
+/*==========================
+
+        7.OUR DEPARTMENTS
+
+============================*/
+
+.dept-box {
+
+    border-bottom: 3px solid #448aff;
+
+    border-radius: 0 0 2px 2px;
+
+/*    margin-bottom: 30px;*/
+
+    min-height: 380px;
+
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+
+
+.dept-box .dept-details {
+
+    background-color: #fbf7f8;
+
+/*    bottom: -65px;*/
+bottom: 0;
+
+    padding: 0 15px 20px;
+
+    position: absolute;
+
+    text-align: center;
+
+    transition:all 0.3s ease;
+
+    -moz-transition:all 0.3s ease;
+
+    -webkit-transition:all 0.3s ease;
+
+    -ms-transition:all 0.3s ease;
+
+    -o-transition:all 0.3s ease;
+
+    width: 100%;
+
+}
+
+.dept-box .dept-details h4 {
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+}
+
+.dept-details .round-style {
+
+    background: #fbf7f8 none repeat scroll 0 0;
+
+    border-radius: 50%;
+
+    height: 70px;
+
+    left: 0;
+
+    margin: 0 auto;
+
+    position: absolute;
+
+    right: 0;
+
+    top: -35px;
+
+    width: 70px;
+
+}
+
+
+
+.dept-box:hover .dept-details {
+
+    bottom: 0;
+
+}
+
+
+
+.dept-box .dept-details .icon {
+
+    color: #448aff;
+
+    display: inline-block;
+
+    font-size: 32px;
+
+    position: relative;
+
+    top: -15px;
+
+}
+
+
+
+.dept-box .dept-details .details {
+
+    font-size: 14px;
+
+}
+
+
+
+.dept-box .dept-details a.thm-btn {
+
+    margin-top: 15px;
+
+    background: #448aff;
+
+    border-radius: 30px;
+
+    display: inline-block;
+
+    color: #fff;
+
+    font-size: 14px;
+
+    text-transform: uppercase;
+
+    padding: 6px 15px;
+
+    border: 2px solid transparent;
+
+    transition: all .3s ease;
+
+}
+
+
+
+.dept-box .dept-details a.thm-btn:hover {
+
+    background-color: #fff;
+
+    border-color: #448aff;
+
+    color: #448aff;
+
+}
+
+
+
+.dept-box .dept-details a.thm-btn.inverse {
+
+    background-color: #fff;
+
+    border-color: #448aff;
+
+    color: #448aff;
+
+}
+
+
+
+.dept-box .dept-details a.thm-btn.inverse:hover {
+
+    background-color: #448aff;
+
+    border-color: #448aff;
+
+    color: #fff;
+
+}
+
+
+
+/*==========================
+
+        8.REVIEWS
+
+============================*/
+
+
+
+.review-slider .item .user-txt {
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 1rem 0 2rem 0;
+
+    padding-left: 0.25rem;
+
+}
+
+
+
+    .review-slider .item .user-txt::after {
+
+        display: block;
+
+        clear: both;
+
+        content: "";
+
+    }
+
+
+
+    .review-slider .item .user-txt .user-pics {
+
+        width: 60px;
+
+        height: 60px;
+
+        float: left;
+
+        border-radius: 100%;
+
+        margin-right: 1rem;
+
+        overflow: hidden;
+
+    }
+
+
+
+        .review-slider .item .user-txt .user-pics img {
+
+            width: 100%;
+
+            max-width: 100%;
+
+            height: auto;
+
+        }
+
+
+
+    .review-slider .item .user-txt .user-info {
+
+        float: left;
+
+    }
+
+
+
+        .review-slider .item .user-txt .user-info .heading {
+
+            line-height: 1;
+
+            margin-bottom: 0.25rem;
+
+            margin-top: 0.25rem;
+
+        }
+
+
+
+        .review-slider .item .user-txt .user-info .sub-heading {
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+            line-height: normal;
+
+            margin-bottom: 0;
+
+        }
+
+
+
+.review-slider .item .review-card {
+
+    position: relative;
+
+    background: #fff;
+
+    padding: 1.5rem;
+
+    border-radius: 0.5rem;
+
+    overflow: visible;
+
+    text-align: center;
+
+}
+
+
+
+    .review-slider .item .review-card p {
+
+        color: #414c5a;
+
+        font-weight: 600;
+
+        margin-bottom: 0;
+
+    }
+
+
+
+    .review-slider .item .review-card::before {
+
+        content: "";
+
+        background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzgwODlGRjt9Cjwvc3R5bGU+CjxnIGlkPSJRdW90ZW1hcmtzLWxlZnQiPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTQwNSwyMDkuOGMtMS0xMS4xLTAuMi00MS41LDI4LjgtODMuNmMyLjItMy4yLDEuOC03LjUtMC45LTEwLjJjLTExLjgtMTEuOC0xOS4yLTE5LjMtMjQuMy0yNC41CgkJYy02LjgtNi45LTkuOC0xMC0xNC40LTE0LjFjLTMtMi43LTcuNi0yLjgtMTAuNi0wLjFjLTUwLjYsNDQtMTA2LjgsMTM1LTk4LjcsMjQ2LjVjNC44LDY1LjUsNTIuNSwxMTMsMTEzLjUsMTEzCgkJYzYyLjYsMCwxMTMuNS01MC45LDExMy41LTExMy41QzUxMiwyNjIuOCw0NjQuNiwyMTMuMiw0MDUsMjA5Ljh6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTIwLjksMjA5LjhjLTEtMTEuMS0wLjMtNDEuNCwyOC44LTgzLjZjMi4yLTMuMiwxLjgtNy41LTAuOS0xMC4yYy0xMS44LTExLjgtMTkuMS0xOS4zLTI0LjMtMjQuNQoJCWMtNi44LTYuOS05LjktMTAuMS0xNC40LTE0LjJjLTMtMi43LTcuNi0yLjctMTAuNi0wLjFjLTUwLjYsNDQtMTA2LjgsMTM1LTk4LjcsMjQ2LjV2MGM0LjgsNjUuNCw1Mi41LDExMywxMTMuNSwxMTMKCQljNjIuNiwwLDExMy41LTUwLjksMTEzLjUtMTEzLjVDMjI3LjksMjYyLjgsMTgwLjUsMjEzLjIsMTIwLjksMjA5Ljh6Ii8+CjwvZz4KPC9zdmc+Cg==");
+
+        background-size: cover;
+
+        display: block;
+
+        width: 40px;
+
+        height: 40px;
+
+        position: absolute;
+
+        top: 0.75rem;
+
+        left: 1rem;
+
+        opacity: 0.2;
+
+    }
+
+
+
+/*==========================
+
+        9.OUR TEAM
+
+============================*/
+
+
+
+.our-team{
+
+    position:relative;
+
+}
+
+
+
+.our-team .team-box{
+
+    position:relative;
+
+    margin-bottom:30px; 
+
+}
+
+
+
+.our-team .team-box img{
+
+    display:block;
+
+    width:100%; 
+
+}
+
+
+
+.our-team .team-box .title-box{
+
+    padding-top:20px;   
+
+}
+
+
+
+.our-team .team-box .title-box h4{
+
+    font-size:18px;
+
+    font-weight:700;
+
+}
+
+
+
+.our-team .team-box .title-box p{
+
+    font-style:italic;
+
+    color:#888888;  
+
+}
+
+
+
+.our-team .team-box .get-apt{
+
+    font-weight:600;
+
+    color:#448aff;
+
+    text-transform:uppercase;
+
+    font-size:14px; 
+
+}
+
+
+
+.our-team .team-box .get-apt:hover{
+
+    color:#007b8a;
+
+}
+
+
+
+/*==========================
+
+        10.PREMISES
+
+============================*/
+
+.premises-slider .owl-stage-outer {
+
+    padding: 0 0 2rem 0;
+
+}
+
+
+
+.premises-slider .owl-item .premises-box {
+
+    opacity: 0.75;
+
+    filter: blur(0.5px);
+
+    -webkit-transform: scale(0.85);
+
+    transform: scale(0.85);
+
+    transition: transform 0.35s ease-out, filter 0.35s ease-out, box-shadow 0.35s ease-out, opacity 0.35s ease-out;
+
+}
+
+
+
+.premises-slider .owl-item.center .premises-box {
+
+    opacity: 1;
+
+    filter: blur(0);
+
+    box-shadow: 0 7px 15px rgba(0, 9, 128, 0.05), 0 12px 28px rgba(0, 9, 128, 0.075);
+
+    -webkit-transform: scale(1);
+
+    transform: scale(1);
+
+}
+
+
+
+.premises-slider .owl-dots {
+
+    text-align: center;
+
+}
+
+
+
+.premises-slider .owl-dot {
+
+    background: rgba(38, 91, 251, 0.4) !important;
+
+    height: 10px;
+
+    width: 10px;
+
+    margin: 0 5px;
+
+    -webkit-border-radius: 10px;
+
+    -moz-border-radius: 10px;
+
+    border-radius: 10px;
+
+}
+
+
+
+    .premises-slider .owl-dot.active {
+
+        background: #448aff !important;
+
+    }
+
+    
+
+/*==========================
+
+        11.APPOINTMENT
+
+============================*/
+
+.appointment {
+
+  background-color: #448aff;
+
+}
+
+
+
+    .appointment .contant-number {
+
+      background: url("../images/appointment-left-bg.jpg") center center;
+
+      background-size: cover;
+
+      background-position: center center;
+
+      height: 100%;
+
+      position: relative;
+
+    }
+
+
+
+    .appointment .contant-number h3 {
+
+      font-size: 35px;
+
+      font-weight: bold;
+
+      margin: 0;
+
+      position: absolute;
+
+      bottom: 100px;
+
+      right: 0;
+
+      background: rgba(0, 0, 0, 0.69);
+
+      color: #ffffff;
+
+      padding: 25px 20px;
+
+      line-height: 0;
+
+    }
+
+
+
+    .appointment .appointment-form {
+
+        max-width: 90%;
+
+        padding: 60px 0 60px 0;
+
+        margin: auto;
+
+    }
+
+
+
+    .appointment .appointment-form .title {
+
+      font-size: 32px;
+
+      color: #ffffff;
+
+      margin-bottom: 30px;
+
+      font-family: "Poppins", sans-serif;
+
+    }
+
+
+
+.book-now-btn {
+
+    background-color: #ffffff;
+
+    color: #448aff;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    border-radius: 6px;
+
+    padding: 0 15px;
+
+    height: 40px;
+
+    line-height: 40px;
+
+}
+
+
+
+.book-now-btn:hover {
+
+    background-color: #000;
+
+    color: #fff;
+
+}
+
+
+
+.form-control {
+
+    font-size:14px;
+
+}
+
+
+
+/*==========================
+
+        12.FAQ's
+
+============================*/
+
+.faq-panel {
+
+    margin-bottom: 2rem;
+
+}
+
+
+
+.question-box {
+
+    margin-bottom: 1rem;
+
+    backface-visibility: hidden;
+
+    -webkit-backface-visibility: hidden;
+
+    background: #fff;
+
+    border: 1px solid #eee;
+
+    border-radius: 4px;
+
+}
+
+
+
+.faq-header {
+
+    border: none;
+
+}
+
+
+
+.question-box .btn-link {
+
+    position: relative;
+
+    background: #f8f8f8;
+
+    text-align: left;
+
+    margin-bottom: 0;
+
+    margin-top: 0;
+
+    padding: 1rem 1.5rem;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: color 0.25s ease-out;
+
+    width: 100%;
+
+    border: none;
+
+}
+
+
+
+.question-box .faq-body {
+
+    padding: 0.5rem 1rem;
+
+}
+
+
+
+    .question-box .faq-body p {
+
+        margin-bottom: 5px;
+
+    }
+
+
+
+.question-box .btn-link.collapsed {
+
+    color: #161e39;
+
+}
+
+
+
+.question-box .btn-link {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    color: #448aff;
+
+}
+
+
+
+.question-box.active h4::after {
+
+    color: #448aff;
+
+    top: 14px;
+
+    -webkit-transform: rotate(-180deg);
+
+    transform: rotate(-180deg);
+
+}
+
+
+
+.caret-icon {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 24px;
+
+    line-height: 20px;
+
+    width: 25px;
+
+}
+
+
+
+.question-box.active .btn-link .caret-icon {
+
+    transform: rotateZ(-180deg);
+
+}
+
+
+
+/*==========================
+
+        13.FOOTER
+
+============================*/
+
+.footer {
+
+    position: relative;
+
+    padding-top: 250px;
+
+    overflow: hidden;
+
+}
+
+
+
+    .footer::after {
+
+        content: "";
+
+        background: url(../images/waves2.svg) top no-repeat;
+
+        background-size: auto;
+
+        background-size: contain;
+
+        display: block;
+
+        height: 100%;
+
+        position: absolute;
+
+        top: -5px;
+
+        left: -1px;
+
+        right: -4px;
+
+        z-index: 1;
+
+    }
+
+
+
+.footer-bottom,
+
+.footer-top {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+
+.footer .foot-logo img {
+
+    height: 32px;
+
+}
+
+
+
+.footer .footer-menu li {
+
+    margin-bottom: 10px;
+
+    -webkit-transition: all 0.5s;
+
+    -moz-transition: all 0.5s;
+
+    transition: all 0.5s;
+
+}
+
+
+
+    .footer .footer-menu li:hover {
+
+        margin-left: 10px;
+
+    }
+
+
+
+.footer h5 {
+
+    color: #fff;
+
+}
+
+
+
+.footer p {
+
+    color: #fff;
+
+}
+
+
+
+.footer .footer-menu li a,
+
+.footer .footer-menu li i {
+
+    display: inline-block;
+
+    font-size: 16px;
+
+    color: #ddd !important;
+
+    transition: all 0.5s;
+
+}
+
+
+
+    .footer .footer-menu li a:hover,
+
+    .footer .footer-menu li:hover i {
+
+        color: #fff !important;
+
+    }
+
+
+
+.footer .footer-social .social-icon {
+
+    display: block;
+
+    background: #fff;
+
+    color: #448aff;
+
+    font-size: 18px;
+
+    width: 38px;
+
+    height: 38px;
+
+    line-height: 38px;
+
+    text-align: center;
+
+    -webkit-border-radius: 50%;
+
+    -moz-border-radius: 50%;
+
+    border-radius: 50%;
+
+    transition: all 0.5s;
+
+}
+
+
+
+    .footer .footer-social .social-icon:hover {
+
+        color: #fff !important;
+
+        background-color: #000;
+
+    }
+
+
+
+.footer-desc {
+
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+
+
+.contact-menu-list li {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    line-height: normal;
+
+}
+
+
+
+.contact-menu-list i {
+
+    font-size: 20px;
+
+    margin-right: 10px;
+
+    margin-top: 5px;
+
+}
+
+.footer .footer-newsletter {
+
+        font-size: 15px;
+
+    }
+
+
+
+    .footer .footer-newsletter form {
+
+        background: #fff;
+
+        padding: 6px 10px;
+
+        position: relative;
+
+        border-radius: 50px;
+
+        text-align: left;
+
+        border: 1px solid #ddfbff;
+
+    }
+
+
+
+    .footer .footer-newsletter form input[type="email"] {
+
+        border: 0;
+
+        padding: 4px 8px;
+
+        width: calc(100% - 100px);
+
+    }
+
+
+
+    .footer .footer-newsletter form input[type="submit"] {
+
+        position: absolute;
+
+        top: 0;
+
+        right: 0;
+
+        bottom: 0;
+
+        border: 0;
+
+        background: none;
+
+        font-size: 16px;
+
+        padding: 0 20px;
+
+        background: #448aff;
+
+        color: #fff;
+
+        transition: 0.3s;
+
+        border-radius: 50px;
+
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+
+    }
+
+
+
+    .footer .footer-newsletter form input[type="submit"]:hover {
+
+        background: #000;
+
+    }   
+
+
+
+/*==========================
+
+        14.RESPONSIVE
+
+============================*/
+
+
+
+@media (max-width: 1480px) {
+
+    .footer {
+
+        padding-top: 200px;
+
+    }
+
+}
+
+
+
+@media (max-width: 1366px) {
+
+    .home-bg.waves-bg {
+
+        margin: 0 0 0;
+
+        padding: 7rem 0 0 0;
+
+    }
+
+
+
+    .home-slider .owl-dots {
+
+        position: absolute;
+
+        left: 50%;
+
+        bottom: 50px;
+
+        transform: translateX(-50%);
+
+    }
+
+}
+
+
+
+@media (max-width: 1199px) {
+
+    .container {
+
+        max-width: 99%;
+
+    }
+
+}
+
+
+
+@media (max-width: 1100px) {
+
+    .footer {
+
+        padding-top: 150px;
+
+    }
+
+}
+
+
+
+@media (max-width: 991px) {
+
+    .home-slider .owl-dots {
+
+        bottom: 10px;
+
+    }
+
+
+
+    .contact_btn .btn-sm {
+
+        background: #448aff;
+
+        border: 2px solid #448aff;
+
+        color: #fff;
+
+    }
+
+
+
+    .home-slider .owl-item img {
+
+        display: table;
+
+        margin: auto;
+
+        max-width: 50%;
+
+    }
+
+
+
+    .home-slider .owl-item .actions {
+
+        display: table;
+
+        margin: 0 auto 20px;
+
+    }
+
+
+
+    .custom-nav .brand-logo .logo-dark {
+
+        display: inline-block;
+
+    }
+
+
+
+    .custom-nav .brand-logo .logo-light {
+
+        display: none;
+
+    }
+
+
+
+    .contact_btn {
+
+        display: flex;
+
+    }
+
+
+
+    .custom-nav {
+
+        background-color: #fff !important;
+
+        margin-top: 0px;
+
+        padding: 10px 0px !important;
+
+    }
+
+
+
+        .custom-nav .navbar-nav li a {
+
+            color: #000;
+
+            text-align: center;
+
+            margin: 0 0px;
+
+            padding: 6px 0;
+
+        }
+
+
+
+        .custom-nav .navbar-nav li.active a,
+
+        .custom-nav .navbar-nav li:hover a {
+
+            background-color: #fff;
+
+            color: #448aff !important;
+
+            border-radius: 0;
+
+        }
+
+
+
+        .custom-nav > .container {
+
+            width: 90%;
+
+        }
+
+
+
+        .custom-nav .brand-logo {
+
+            padding: 0px;
+
+        }
+
+
+
+        .custom-nav .navbar-brand.brand-logo img {
+
+            height: 36px;
+
+        }
+
+
+
+    .navbar-collapse {
+
+        background: #f8f8f8;
+
+        border-top: 2px solid #eee;
+
+        position: fixed;
+
+        top: 61px;
+
+        left: 0;
+
+        width: 100%;
+
+        padding: 0;
+
+    }
+
+
+
+    .navbar-nav {
+
+        margin-top: 0px;
+
+    }
+
+
+
+    .section {
+
+        padding-top: 30px;
+
+        padding-bottom: 30px;
+
+    }
+
+
+
+    .section-title h2,
+
+    .section-subtitle {
+
+        text-align: center;
+
+    }
+
+
+
+    .custom-nav {
+
+        padding: 12px 0;
+
+    }
+
+
+
+    .container {
+
+        max-width: 98%;
+
+    }
+
+
+
+    .m-text-center {
+
+        text-align: center;
+
+    }
+
+
+
+    p {
+
+        text-align: center;
+
+    }
+
+
+
+    .faq-body p {
+
+        text-align: left;
+
+    }
+
+
+
+    .section-subtitle {
+
+        max-width: 500px;
+
+        font-size: 16px;
+
+        padding-top: 0;
+
+        display: table;
+
+        margin: auto;
+
+    }
+
+
+
+    .foot-logo {
+
+        display: table;
+
+        margin: auto;
+
+    }
+
+
+
+    .ftr-about {
+
+        text-align: center !important;
+
+    }
+
+
+
+    .footer-social {
+
+        text-align: center;
+
+    }
+
+
+
+    .m-box-0 {
+
+        margin-bottom: 0;
+
+    }
+
+    .our-team .team-box .title-box h4 {
+
+        text-align:center;
+
+    }
+
+    .btn {
+
+        height:35px !important;     
+
+        line-height: 35px;
+
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    .footer {
+
+        padding-top: 100px;
+
+    }
+
+
+
+    .m-d-flex {
+
+        display: flex;
+
+    }
+
+
+
+    .section {
+
+        padding-top: 40px;
+
+        padding-bottom: 40px;
+
+    }
+
+
+
+    .section-subtitle {
+
+        line-height: 1.6;
+
+    }
+
+    .m-al-c {
+
+        display: flex;
+
+        justify-content: center;
+
+    }
+
+    .appointment .contant-number {
+
+        height: 500px;
+
+    }
+
+
+
+    .home-slider .owl-item img {
+
+        max-width: 70%;
+
+        display: table;
+
+        margin: auto;
+
+    }
+
+    .home-slider .owl-dots {
+
+        bottom: 0;
+
+    }
+    .home-bg .heading {
+
+        font-size: 40px;
+
+        line-height: 40px;
+
+        text-align: center;
+
+    }
+
+
+    .container {
+
+        max-width: 98%;
+
+    }
+
+
+    .section-title h2 {
+
+        font-size: 26px;
+
+    }
+
+
+
+
+    .footer .footer-menu li:hover {
+
+        margin-left: 0;
+
+    }
+
+    .our-team .team-box .title-box h4 {
+
+        text-align:center;
+
+    }
+
+    .learn-more {
+
+        margin: auto;
+
+        display: table;
+
+    }
+
+    .sub-title {
+
+        text-align:center;
+
+    }
+
+    .custom-nav .navbar-brand.brand-logo img {
+
+        height: 24px;
+
+    }
+
+    .appointment .appointment-form {
+
+        padding: 50px 0 50px 0px;
+
+    }
+
+    .appointment .appointment-form .title {
+
+        text-align: center;
+
+    }
+
+}
+
+@media (max-width: 599px) {
+
+    .review-slider .user-txt {
+
+        justify-content: center;
+
+        padding: 1rem 0 2rem !important;
+
+    }
+
+
+
+    .review-slider .item .review-card::after {
+
+        display: none;
+
+    }
+
+}
+
+
+
+@media (max-width: 575px) {
+
+    .margin-top-sb-30 {
+
+        margin-top: 30px;
+
+    }
+
+
+
+    .home-bg .heading {
+
+        font-size: 40px;
+
+        line-height: 40px;
+
+    }
+
+
+
+    .home-slider .owl-item img {
+
+        max-width: 80%;
+
+        display: table;
+
+        margin: auto;
+
+    }
+
+
+
+    .home-slider .owl-dots {
+
+        bottom: -10px;
+
+    }
+
+
+
+    .footer-menu {
+
+        display: none;
+
+        margin-top: 10px !important;
+
+    }
+
+
+
+    .footer-title {
+
+        position: relative;
+
+        cursor: pointer;
+
+    }
+}
+
+.footer-title i {
+
+    position: absolute;
+
+    right: 0;
+
+    margin-top: 1px;
+
+    font-size: 18px;
+
+}
+
+.footer-title.active i {
+
+    transform: rotateZ(-180deg);
+
+}
+
+
+
+
+
+@media only screen and (max-width: 479px) {
+
+    .footer {
+
+        padding-top: 50px;
+
+    }
+
+
+
+    .brand-logo.navbar-brand {
+
+        margin-right: 5px !important;
+
+    }
+
+
+
+    .custom-nav .navbar-brand.brand-logo img {
+
+        height: 20px;
+
+    }
+
+}
+
+/*---------custom style-------*/
+
+.header-top-area {
+    background: #fff;
+    border-bottom: 1px solid #448aff;
+}
+.header-top-bar {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact_btn {
+    gap: 15px;
+}
+.contact_btn .btn-sm {
+    text-transform: uppercase;
+    min-width: 90px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background: #448aff;
+    border-color: #448aff;
+    color: #fff;
+}
+/*.custom-nav .navbar-nav li a::after,*/
+.custom-nav .navbar-nav li a::before {
+    background: #448aff;
+}
+.custom-nav {
+    top: 41px;
+    transition: all 0.2s;
+    padding: 15px 0; 
+    background-color: #EFF5F7;
+    border-bottom: 1px solid #448aff;
+}
+.dropdown-toggle::after {
+    position: relative;
+    top: 3px;
+}
+.custom-nav .dropdown-menu a {
+    margin: 0 !important;
+}
+.custom-nav .dropdown-menu a::before { display:none }
+
+.sticky-header {
+    top: 0;
+}
+.header-top-left,
+.header-top-bar ul {
+    gap: 15px;
+}
+.header-top-bar ul,
+.header-top-bar ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.header-top-bar ul li a {
+    color: #448aff;
+}
+.header-top-bar ul li {
+    font-size: 13px;
+}
+.header-top-left .btn-call {
+    background-color: #448aff;
+    border: 2px solid #448aff;
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 600;
+    height: 28px;
+    border-radius: 3px;
+    padding: 3px 10px;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    transition: none;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15) !important;
+    -moz-box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15) !important;
+    box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15) !important;
+}
+.header-top-left .btn-call:hover {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+.header-top-left .btn-call .fa {
+    padding-right: 3px;
+    font-size: 16px;
+}
+.header-social {
+    gap: 10px;
+}
+.header-social a {
+    color: #448aff;
+    font-size: 22px;
+}
+.content-box-wrap {
+    max-width: 400px;
+}
+.banner-quick-link {
+    
+}
+.banner-quick-link a {
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    line-height: 1.4;
+    padding: 10px 15px;
+    background-color: #448aff;
+    border-radius: 3px;
+    margin: 8px 0;
+}
+.banner-quick-link a:hover {
+    background-color: #000;
+}
+.home-bg::before,
+.footer::after,
+.banner-quick-link a .fa {
+    display: none;
+}
+.footer {
+    background: #fff;
+    padding: 15px 0 !important;
+    border-top:1px solid #448aff;
+}
+.footer-desc {
+    border: none;
+}
+.footer-menu {
+    gap: 15px;
+}
+.footer .footer-menu li,
+.footer .footer-menu li:hover {
+    margin: 0;
+}
+.img-fadeInRight {
+    max-width: 447px;
+}
+.waves-bg.home-bg {
+    height: auto;
+}
+.custom-nav .navbar-nav li a,
+.custom-nav .navbar-nav li.active a, 
+.custom-nav .navbar-nav li:hover a, 
+.custom-nav .navbar-nav li:active a,
+.content-box-wrap h2 {
+    color: #448aff;
+}
+.brand-logo {
+    font-size: 30px;
+    color: #448aff;
+}
+.brand-logo:hover {
+    color: #448aff;
+}
+.home-section {
+    background: linear-gradient(45deg, #F9FBFE, #E0E9F9, #86A8E7, #91EAE4);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.footer .footer-social .social-icon {
+    background: #448aff;
+    color: #fff;
+}
+.footer p,
+.footer .footer-menu li a, 
+.footer .footer-menu li i {
+    color: #448aff !important; 
+}
+.footer .footer-menu li a:hover, 
+.footer .footer-menu li:hover i {
+    color: #448aff !important;
+}
+
+.navbar-nav li {
+    position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+.header-top-left ul {
+    display: none !important;
+} 
+.header-top-bar {
+    padding: 5px 15px;
+} 
+.custom-nav {
+    position: initial !important;
+}
+.appointment-link {
+    width: 90%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 999;
+    margin: 0 auto;
+}
+.home-bg.waves-bg {
+    padding: 40px 0;
+    height: auto;
+}
+.img-fadeInRight {
+    max-width: 90%;
+    margin: 0 auto;
+}
+.content-box-wrap {
+    max-width: 100%;
+    width: 100%;
+}
+.footer-menu {
+    justify-content: center;
+}
+.footer {
+    padding-bottom: 80px !important;
+}
+
+}
+
+/*------filter-----*/
+.filter_area {
+    padding: 40px 0;
+    margin-top: 80px;
+}
+.grid {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.grid-item {
+    width: calc(calc(100% - 90px) / 3);
+    padding: 20px;
+    margin: 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #448aff;
+    text-align: center;
+    border-radius: 3px;
+}
+/* Filter buttons */
+.filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filters button {
+    padding: 10px;
+    margin: 0 5px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.filters button.active {
+    background-color: #555;
+}
+.filters .filter-select {
+    border-color: #448aff;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 767px) {
+.filter_area {
+    margin-top: 0;
+}
+.grid-item {
+    width: calc(calc(100% - 60px) / 2);
+} 
+.filters {
+    gap: 20px;
+}
+}
+
+@media only screen and (max-width: 580px) {
+.grid-item {
+    width: 100%;
+    margin: 15px 0;
+} 
+.filters {
+    gap: 20px;
+}
+
+}
+
+/*********step form*********/
+
+.step_area {
+    margin-top: 90px;
+    padding: 0 20px 30px 20px;
+}
+.step {
+    display: none;
+}
+.step.active {
+    display: block;
+}
+.step-navigation {
+    margin-top: 20px;
+    text-align: center;
+}
+.step-navigation button {
+    margin: 5px;
+}
+
+/* Progress bar styling */
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.progress-step {
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+.progress-step::after,
+.progress-step::before {
+    content: "";
+    position: absolute;
+    top:15px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #ddd;
+    z-index: 1;
+}
+.progress-step:nth-child(1)::after,
+.progress-step:nth-child(1)::before {
+    width: 50%;
+    left: 50%;
+}
+.progress-step:nth-child(3)::after,
+.progress-step:nth-child(3)::before {
+    width: 50%;
+    left: 0;
+}
+.progress-step.active::after {
+    left: 50%;
+    background-color: #007bff;
+    z-index: 2;
+}
+.progress-step.active::before {
+    background-color: #007bff;
+}
+
+.progress-step.completed::after {
+    left: 50%;
+    background-color: #28a745;
+    z-index: 2;
+}
+.progress-step.completed::before {
+    background-color: #28a745;
+}
+.progress-step.completed:nth-child(1)::after,
+.progress-step.completed:nth-child(1)::before,
+.progress-step.active:nth-child(1)::after,
+.progress-step.active:nth-child(1)::before {
+    width: 100%;
+}
+
+.progress-step.completed:nth-child(3)::after,
+.progress-step.completed:nth-child(3)::before,
+.progress-step.active:nth-child(3)::after,
+.progress-step.active:nth-child(3)::before {
+    display: none;
+}
+.progress-step .step-circle {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 50%;
+    line-height: 30px;
+    margin: 0 auto;
+    color: white;
+    position: relative;
+    z-index: 5;
+}
+.progress-step.active .step-circle {
+    background-color: #007bff;
+}
+.progress-step.completed .step-circle {
+    background-color: #28a745;
+}
+.step_area .dept-box {
+    background-color: #fff;
+    min-height: auto;
+}
+.step_area .dept-box .dept-details {
+    position: relative;
+}
+.step_content_wrap {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+#stepForm .step {
+    text-align: left;
+}
+.calendar-icon {
+    position: absolute;
+    right: 10px;
+    bottom:10px;
+    z-index: 2;
+}
+#stepForm .form-group {
+    position: relative;
+}
+.step-navigation .btn {
+    padding: 5px 10px;
+}
+.step-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.step-navigation .btn {
+    padding: 10px 15px;
+    margin: 0;
+    height: auto !important;
+    line-height: 1.2;
+}
+.step_area .grid-item { margin-top:0 }
+@media only screen and (max-width: 767px) {
+.step_area {
+    margin-top: 30px;
+} 
+
+}
+
+/* -------intl-tel-input---- */
+.client-otp .form-control,
+.phone-number-field .form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.client-otp .form-control:focus,
+.phone-number-field .form-control:focus {
+    border: 1px solid #ccc;
+}
+.client-otp .form-control {
+    padding: 10px;
+    text-align: center;
+}
+.client-otp {
+    gap: 30px;
+    justify-content: center;
+}
+.client-otp .form-control {
+    width: 40px;
+    height: 40px;
+}
+.intl-tel-input {
+    position: relative;
+    display: block;
+}
+.intl-tel-input * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.intl-tel-input .hide {
+    display: none;
+}
+.intl-tel-input .v-hide {
+    visibility: hidden;
+}
+.intl-tel-input input, .intl-tel-input input[type=text], .intl-tel-input input[type=tel] {
+    position: relative;
+    z-index: 0;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-right: 36px;
+    margin-right: 0;
+}
+.intl-tel-input .flag-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 1px;
+}
+.intl-tel-input .selected-flag {
+    z-index: 1;
+    position: relative;
+    width: 36px;
+    height: 100%;
+    padding: 0 0 0 8px;
+}
+.intl-tel-input .selected-flag .iti-flag {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.intl-tel-input .selected-flag .iti-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    right: 6px;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 4px solid #555;
+}
+.intl-tel-input .selected-flag .iti-arrow.up {
+    border-top: none;
+    border-bottom: 4px solid #555;
+}
+.intl-tel-input .country-list {
+    position: absolute;
+    z-index: 2;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    margin: 0 0 0 -1px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border: 1px solid #CCC;
+    white-space: nowrap;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+.intl-tel-input .country-list.dropup {
+    bottom: 100%;
+    margin-bottom: -1px;
+}
+.intl-tel-input .country-list .flag-box {
+    display: inline-block;
+    width: 20px;
+}
+@media (max-width: 500px) {
+    .intl-tel-input .country-list {
+        white-space: normal;
+   }
+}
+.intl-tel-input .country-list .divider {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #CCC;
+}
+.intl-tel-input .country-list .country {
+    padding: 5px 10px;
+}
+.intl-tel-input .country-list .country .dial-code {
+    color: #999;
+}
+.intl-tel-input .country-list .country.highlight {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.intl-tel-input .country-list .flag-box, .intl-tel-input .country-list .country-name, .intl-tel-input .country-list .dial-code {
+    vertical-align: middle;
+}
+.intl-tel-input .country-list .flag-box, .intl-tel-input .country-list .country-name {
+    margin-right: 6px;
+}
+.intl-tel-input.allow-dropdown input, .intl-tel-input.allow-dropdown input[type=text], .intl-tel-input.allow-dropdown input[type=tel], .intl-tel-input.separate-dial-code input, .intl-tel-input.separate-dial-code input[type=text], .intl-tel-input.separate-dial-code input[type=tel] {
+    padding-right: 6px;
+    padding-left: 52px;
+    margin-left: 0;
+}
+.intl-tel-input.allow-dropdown .flag-container, .intl-tel-input.separate-dial-code .flag-container {
+    right: auto;
+    left: 0;
+}
+.intl-tel-input.allow-dropdown .selected-flag, .intl-tel-input.separate-dial-code .selected-flag {
+    width: 46px;
+}
+.intl-tel-input.allow-dropdown .flag-container:hover {
+    cursor: pointer;
+}
+.intl-tel-input.allow-dropdown .flag-container:hover .selected-flag {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.intl-tel-input.allow-dropdown input[disabled] + .flag-container:hover, .intl-tel-input.allow-dropdown input[readonly] + .flag-container:hover {
+    cursor: default;
+}
+.intl-tel-input.allow-dropdown input[disabled] + .flag-container:hover .selected-flag, .intl-tel-input.allow-dropdown input[readonly] + .flag-container:hover .selected-flag {
+    background-color: transparent;
+}
+.intl-tel-input.separate-dial-code .selected-flag {
+    background-color: rgba(0, 0, 0, 0.05);
+    display: table;
+}
+.intl-tel-input.separate-dial-code .selected-dial-code {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 28px;
+}
+.intl-tel-input.separate-dial-code.iti-sdc-2 input, .intl-tel-input.separate-dial-code.iti-sdc-2 input[type=text], .intl-tel-input.separate-dial-code.iti-sdc-2 input[type=tel] {
+    padding-left: 66px;
+}
+.intl-tel-input.separate-dial-code.iti-sdc-2 .selected-flag {
+    width: 60px;
+}
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-2 input, .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-2 input[type=text], .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-2 input[type=tel] {
+    padding-left: 76px;
+}
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-2 .selected-flag {
+    width: 70px;
+}
+.intl-tel-input.separate-dial-code.iti-sdc-3 input, .intl-tel-input.separate-dial-code.iti-sdc-3 input[type=text], .intl-tel-input.separate-dial-code.iti-sdc-3 input[type=tel] {
+    padding-left: 74px;
+}
+.intl-tel-input.separate-dial-code.iti-sdc-3 .selected-flag {
+    width: 68px;
+}
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 input, .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 input[type=text], .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 input[type=tel] {
+    padding-left: 84px;
+}
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 .selected-flag {
+    width: 78px;
+}
+.intl-tel-input.separate-dial-code.iti-sdc-4 input, .intl-tel-input.separate-dial-code.iti-sdc-4 input[type=text], .intl-tel-input.separate-dial-code.iti-sdc-4 input[type=tel] {
+    padding-left: 82px;
+}
+.intl-tel-input.separate-dial-code.iti-sdc-4 .selected-flag {
+    width: 76px;
+}
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input, .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type=text], .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type=tel] {
+    padding-left: 92px;
+}
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 .selected-flag {
+    width: 86px;
+}
+.intl-tel-input.separate-dial-code.iti-sdc-5 input, .intl-tel-input.separate-dial-code.iti-sdc-5 input[type=text], .intl-tel-input.separate-dial-code.iti-sdc-5 input[type=tel] {
+    padding-left: 90px;
+}
+.intl-tel-input.separate-dial-code.iti-sdc-5 .selected-flag {
+    width: 84px;
+}
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-5 input, .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-5 input[type=text], .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-5 input[type=tel] {
+    padding-left: 100px;
+}
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-5 .selected-flag {
+    width: 94px;
+}
+.intl-tel-input.iti-container {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    z-index: 1060;
+    padding: 1px;
+}
+.intl-tel-input.iti-container:hover {
+    cursor: pointer;
+}
+.iti-mobile .intl-tel-input.iti-container {
+    top: 30px;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    position: fixed;
+}
+.iti-mobile .intl-tel-input .country-list {
+    max-height: 100%;
+    width: 100%;
+}
+.iti-mobile .intl-tel-input .country-list .country {
+    padding: 10px 10px;
+    line-height: 1.5em;
+}
+.iti-flag {
+    width: 20px;
+}
+.iti-flag.be {
+    width: 18px;
+}
+.iti-flag.ch {
+    width: 15px;
+}
+.iti-flag.mc {
+    width: 19px;
+}
+.iti-flag.ne {
+    width: 18px;
+}
+.iti-flag.np {
+    width: 13px;
+}
+.iti-flag.va {
+    width: 15px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .iti-flag {
+        background-size: 5630px 15px;
+   }
+}
+.iti-flag.ac {
+    height: 10px;
+    background-position: 0px 0px;
+}
+.iti-flag.ad {
+    height: 14px;
+    background-position: -22px 0px;
+}
+.iti-flag.ae {
+    height: 10px;
+    background-position: -44px 0px;
+}
+.iti-flag.af {
+    height: 14px;
+    background-position: -66px 0px;
+}
+.iti-flag.ag {
+    height: 14px;
+    background-position: -88px 0px;
+}
+.iti-flag.ai {
+    height: 10px;
+    background-position: -110px 0px;
+}
+.iti-flag.al {
+    height: 15px;
+    background-position: -132px 0px;
+}
+.iti-flag.am {
+    height: 10px;
+    background-position: -154px 0px;
+}
+.iti-flag.ao {
+    height: 14px;
+    background-position: -176px 0px;
+}
+.iti-flag.aq {
+    height: 14px;
+    background-position: -198px 0px;
+}
+.iti-flag.ar {
+    height: 13px;
+    background-position: -220px 0px;
+}
+.iti-flag.as {
+    height: 10px;
+    background-position: -242px 0px;
+}
+.iti-flag.at {
+    height: 14px;
+    background-position: -264px 0px;
+}
+.iti-flag.au {
+    height: 10px;
+    background-position: -286px 0px;
+}
+.iti-flag.aw {
+    height: 14px;
+    background-position: -308px 0px;
+}
+.iti-flag.ax {
+    height: 13px;
+    background-position: -330px 0px;
+}
+.iti-flag.az {
+    height: 10px;
+    background-position: -352px 0px;
+}
+.iti-flag.ba {
+    height: 10px;
+    background-position: -374px 0px;
+}
+.iti-flag.bb {
+    height: 14px;
+    background-position: -396px 0px;
+}
+.iti-flag.bd {
+    height: 12px;
+    background-position: -418px 0px;
+}
+.iti-flag.be {
+    height: 15px;
+    background-position: -440px 0px;
+}
+.iti-flag.bf {
+    height: 14px;
+    background-position: -460px 0px;
+}
+.iti-flag.bg {
+    height: 12px;
+    background-position: -482px 0px;
+}
+.iti-flag.bh {
+    height: 12px;
+    background-position: -504px 0px;
+}
+.iti-flag.bi {
+    height: 12px;
+    background-position: -526px 0px;
+}
+.iti-flag.bj {
+    height: 14px;
+    background-position: -548px 0px;
+}
+.iti-flag.bl {
+    height: 14px;
+    background-position: -570px 0px;
+}
+.iti-flag.bm {
+    height: 10px;
+    background-position: -592px 0px;
+}
+.iti-flag.bn {
+    height: 10px;
+    background-position: -614px 0px;
+}
+.iti-flag.bo {
+    height: 14px;
+    background-position: -636px 0px;
+}
+.iti-flag.bq {
+    height: 14px;
+    background-position: -658px 0px;
+}
+.iti-flag.br {
+    height: 14px;
+    background-position: -680px 0px;
+}
+.iti-flag.bs {
+    height: 10px;
+    background-position: -702px 0px;
+}
+.iti-flag.bt {
+    height: 14px;
+    background-position: -724px 0px;
+}
+.iti-flag.bv {
+    height: 15px;
+    background-position: -746px 0px;
+}
+.iti-flag.bw {
+    height: 14px;
+    background-position: -768px 0px;
+}
+.iti-flag.by {
+    height: 10px;
+    background-position: -790px 0px;
+}
+.iti-flag.bz {
+    height: 14px;
+    background-position: -812px 0px;
+}
+.iti-flag.ca {
+    height: 10px;
+    background-position: -834px 0px;
+}
+.iti-flag.cc {
+    height: 10px;
+    background-position: -856px 0px;
+}
+.iti-flag.cd {
+    height: 15px;
+    background-position: -878px 0px;
+}
+.iti-flag.cf {
+    height: 14px;
+    background-position: -900px 0px;
+}
+.iti-flag.cg {
+    height: 14px;
+    background-position: -922px 0px;
+}
+.iti-flag.ch {
+    height: 15px;
+    background-position: -944px 0px;
+}
+.iti-flag.ci {
+    height: 14px;
+    background-position: -961px 0px;
+}
+.iti-flag.ck {
+    height: 10px;
+    background-position: -983px 0px;
+}
+.iti-flag.cl {
+    height: 14px;
+    background-position: -1005px 0px;
+}
+.iti-flag.cm {
+    height: 14px;
+    background-position: -1027px 0px;
+}
+.iti-flag.cn {
+    height: 14px;
+    background-position: -1049px 0px;
+}
+.iti-flag.co {
+    height: 14px;
+    background-position: -1071px 0px;
+}
+.iti-flag.cp {
+    height: 14px;
+    background-position: -1093px 0px;
+}
+.iti-flag.cr {
+    height: 12px;
+    background-position: -1115px 0px;
+}
+.iti-flag.cu {
+    height: 10px;
+    background-position: -1137px 0px;
+}
+.iti-flag.cv {
+    height: 12px;
+    background-position: -1159px 0px;
+}
+.iti-flag.cw {
+    height: 14px;
+    background-position: -1181px 0px;
+}
+.iti-flag.cx {
+    height: 10px;
+    background-position: -1203px 0px;
+}
+.iti-flag.cy {
+    height: 13px;
+    background-position: -1225px 0px;
+}
+.iti-flag.cz {
+    height: 14px;
+    background-position: -1247px 0px;
+}
+.iti-flag.de {
+    height: 12px;
+    background-position: -1269px 0px;
+}
+.iti-flag.dg {
+    height: 10px;
+    background-position: -1291px 0px;
+}
+.iti-flag.dj {
+    height: 14px;
+    background-position: -1313px 0px;
+}
+.iti-flag.dk {
+    height: 15px;
+    background-position: -1335px 0px;
+}
+.iti-flag.dm {
+    height: 10px;
+    background-position: -1357px 0px;
+}
+.iti-flag.do {
+    height: 13px;
+    background-position: -1379px 0px;
+}
+.iti-flag.dz {
+    height: 14px;
+    background-position: -1401px 0px;
+}
+.iti-flag.ea {
+    height: 14px;
+    background-position: -1423px 0px;
+}
+.iti-flag.ec {
+    height: 14px;
+    background-position: -1445px 0px;
+}
+.iti-flag.ee {
+    height: 13px;
+    background-position: -1467px 0px;
+}
+.iti-flag.eg {
+    height: 14px;
+    background-position: -1489px 0px;
+}
+.iti-flag.eh {
+    height: 10px;
+    background-position: -1511px 0px;
+}
+.iti-flag.er {
+    height: 10px;
+    background-position: -1533px 0px;
+}
+.iti-flag.es {
+    height: 14px;
+    background-position: -1555px 0px;
+}
+.iti-flag.et {
+    height: 10px;
+    background-position: -1577px 0px;
+}
+.iti-flag.eu {
+    height: 14px;
+    background-position: -1599px 0px;
+}
+.iti-flag.fi {
+    height: 12px;
+    background-position: -1621px 0px;
+}
+.iti-flag.fj {
+    height: 10px;
+    background-position: -1643px 0px;
+}
+.iti-flag.fk {
+    height: 10px;
+    background-position: -1665px 0px;
+}
+.iti-flag.fm {
+    height: 11px;
+    background-position: -1687px 0px;
+}
+.iti-flag.fo {
+    height: 15px;
+    background-position: -1709px 0px;
+}
+.iti-flag.fr {
+    height: 14px;
+    background-position: -1731px 0px;
+}
+.iti-flag.ga {
+    height: 15px;
+    background-position: -1753px 0px;
+}
+.iti-flag.gb {
+    height: 10px;
+    background-position: -1775px 0px;
+}
+.iti-flag.gd {
+    height: 12px;
+    background-position: -1797px 0px;
+}
+.iti-flag.ge {
+    height: 14px;
+    background-position: -1819px 0px;
+}
+.iti-flag.gf {
+    height: 14px;
+    background-position: -1841px 0px;
+}
+.iti-flag.gg {
+    height: 14px;
+    background-position: -1863px 0px;
+}
+.iti-flag.gh {
+    height: 14px;
+    background-position: -1885px 0px;
+}
+.iti-flag.gi {
+    height: 10px;
+    background-position: -1907px 0px;
+}
+.iti-flag.gl {
+    height: 14px;
+    background-position: -1929px 0px;
+}
+.iti-flag.gm {
+    height: 14px;
+    background-position: -1951px 0px;
+}
+.iti-flag.gn {
+    height: 14px;
+    background-position: -1973px 0px;
+}
+.iti-flag.gp {
+    height: 14px;
+    background-position: -1995px 0px;
+}
+.iti-flag.gq {
+    height: 14px;
+    background-position: -2017px 0px;
+}
+.iti-flag.gr {
+    height: 14px;
+    background-position: -2039px 0px;
+}
+.iti-flag.gs {
+    height: 10px;
+    background-position: -2061px 0px;
+}
+.iti-flag.gt {
+    height: 13px;
+    background-position: -2083px 0px;
+}
+.iti-flag.gu {
+    height: 11px;
+    background-position: -2105px 0px;
+}
+.iti-flag.gw {
+    height: 10px;
+    background-position: -2127px 0px;
+}
+.iti-flag.gy {
+    height: 12px;
+    background-position: -2149px 0px;
+}
+.iti-flag.hk {
+    height: 14px;
+    background-position: -2171px 0px;
+}
+.iti-flag.hm {
+    height: 10px;
+    background-position: -2193px 0px;
+}
+.iti-flag.hn {
+    height: 10px;
+    background-position: -2215px 0px;
+}
+.iti-flag.hr {
+    height: 10px;
+    background-position: -2237px 0px;
+}
+.iti-flag.ht {
+    height: 12px;
+    background-position: -2259px 0px;
+}
+.iti-flag.hu {
+    height: 10px;
+    background-position: -2281px 0px;
+}
+.iti-flag.ic {
+    height: 14px;
+    background-position: -2303px 0px;
+}
+.iti-flag.id {
+    height: 14px;
+    background-position: -2325px 0px;
+}
+.iti-flag.ie {
+    height: 10px;
+    background-position: -2347px 0px;
+}
+.iti-flag.il {
+    height: 15px;
+    background-position: -2369px 0px;
+}
+.iti-flag.im {
+    height: 10px;
+    background-position: -2391px 0px;
+}
+.iti-flag.in {
+    height: 14px;
+    background-position: -2413px 0px;
+}
+.iti-flag.io {
+    height: 10px;
+    background-position: -2435px 0px;
+}
+.iti-flag.iq {
+    height: 14px;
+    background-position: -2457px 0px;
+}
+.iti-flag.ir {
+    height: 12px;
+    background-position: -2479px 0px;
+}
+.iti-flag.is {
+    height: 15px;
+    background-position: -2501px 0px;
+}
+.iti-flag.it {
+    height: 14px;
+    background-position: -2523px 0px;
+}
+.iti-flag.je {
+    height: 12px;
+    background-position: -2545px 0px;
+}
+.iti-flag.jm {
+    height: 10px;
+    background-position: -2567px 0px;
+}
+.iti-flag.jo {
+    height: 10px;
+    background-position: -2589px 0px;
+}
+.iti-flag.jp {
+    height: 14px;
+    background-position: -2611px 0px;
+}
+.iti-flag.ke {
+    height: 14px;
+    background-position: -2633px 0px;
+}
+.iti-flag.kg {
+    height: 12px;
+    background-position: -2655px 0px;
+}
+.iti-flag.kh {
+    height: 13px;
+    background-position: -2677px 0px;
+}
+.iti-flag.ki {
+    height: 10px;
+    background-position: -2699px 0px;
+}
+.iti-flag.km {
+    height: 12px;
+    background-position: -2721px 0px;
+}
+.iti-flag.kn {
+    height: 14px;
+    background-position: -2743px 0px;
+}
+.iti-flag.kp {
+    height: 10px;
+    background-position: -2765px 0px;
+}
+.iti-flag.kr {
+    height: 14px;
+    background-position: -2787px 0px;
+}
+.iti-flag.kw {
+    height: 10px;
+    background-position: -2809px 0px;
+}
+.iti-flag.ky {
+    height: 10px;
+    background-position: -2831px 0px;
+}
+.iti-flag.kz {
+    height: 10px;
+    background-position: -2853px 0px;
+}
+.iti-flag.la {
+    height: 14px;
+    background-position: -2875px 0px;
+}
+.iti-flag.lb {
+    height: 14px;
+    background-position: -2897px 0px;
+}
+.iti-flag.lc {
+    height: 10px;
+    background-position: -2919px 0px;
+}
+.iti-flag.li {
+    height: 12px;
+    background-position: -2941px 0px;
+}
+.iti-flag.lk {
+    height: 10px;
+    background-position: -2963px 0px;
+}
+.iti-flag.lr {
+    height: 11px;
+    background-position: -2985px 0px;
+}
+.iti-flag.ls {
+    height: 14px;
+    background-position: -3007px 0px;
+}
+.iti-flag.lt {
+    height: 12px;
+    background-position: -3029px 0px;
+}
+.iti-flag.lu {
+    height: 12px;
+    background-position: -3051px 0px;
+}
+.iti-flag.lv {
+    height: 10px;
+    background-position: -3073px 0px;
+}
+.iti-flag.ly {
+    height: 10px;
+    background-position: -3095px 0px;
+}
+.iti-flag.ma {
+    height: 14px;
+    background-position: -3117px 0px;
+}
+.iti-flag.mc {
+    height: 15px;
+    background-position: -3139px 0px;
+}
+.iti-flag.md {
+    height: 10px;
+    background-position: -3160px 0px;
+}
+.iti-flag.me {
+    height: 10px;
+    background-position: -3182px 0px;
+}
+.iti-flag.mf {
+    height: 14px;
+    background-position: -3204px 0px;
+}
+.iti-flag.mg {
+    height: 14px;
+    background-position: -3226px 0px;
+}
+.iti-flag.mh {
+    height: 11px;
+    background-position: -3248px 0px;
+}
+.iti-flag.mk {
+    height: 10px;
+    background-position: -3270px 0px;
+}
+.iti-flag.ml {
+    height: 14px;
+    background-position: -3292px 0px;
+}
+.iti-flag.mm {
+    height: 14px;
+    background-position: -3314px 0px;
+}
+.iti-flag.mn {
+    height: 10px;
+    background-position: -3336px 0px;
+}
+.iti-flag.mo {
+    height: 14px;
+    background-position: -3358px 0px;
+}
+.iti-flag.mp {
+    height: 10px;
+    background-position: -3380px 0px;
+}
+.iti-flag.mq {
+    height: 14px;
+    background-position: -3402px 0px;
+}
+.iti-flag.mr {
+    height: 14px;
+    background-position: -3424px 0px;
+}
+.iti-flag.ms {
+    height: 10px;
+    background-position: -3446px 0px;
+}
+.iti-flag.mt {
+    height: 14px;
+    background-position: -3468px 0px;
+}
+.iti-flag.mu {
+    height: 14px;
+    background-position: -3490px 0px;
+}
+.iti-flag.mv {
+    height: 14px;
+    background-position: -3512px 0px;
+}
+.iti-flag.mw {
+    height: 14px;
+    background-position: -3534px 0px;
+}
+.iti-flag.mx {
+    height: 12px;
+    background-position: -3556px 0px;
+}
+.iti-flag.my {
+    height: 10px;
+    background-position: -3578px 0px;
+}
+.iti-flag.mz {
+    height: 14px;
+    background-position: -3600px 0px;
+}
+.iti-flag.na {
+    height: 14px;
+    background-position: -3622px 0px;
+}
+.iti-flag.nc {
+    height: 10px;
+    background-position: -3644px 0px;
+}
+.iti-flag.ne {
+    height: 15px;
+    background-position: -3666px 0px;
+}
+.iti-flag.nf {
+    height: 10px;
+    background-position: -3686px 0px;
+}
+.iti-flag.ng {
+    height: 10px;
+    background-position: -3708px 0px;
+}
+.iti-flag.ni {
+    height: 12px;
+    background-position: -3730px 0px;
+}
+.iti-flag.nl {
+    height: 14px;
+    background-position: -3752px 0px;
+}
+.iti-flag.no {
+    height: 15px;
+    background-position: -3774px 0px;
+}
+.iti-flag.np {
+    height: 15px;
+    background-position: -3796px 0px;
+}
+.iti-flag.nr {
+    height: 10px;
+    background-position: -3811px 0px;
+}
+.iti-flag.nu {
+    height: 10px;
+    background-position: -3833px 0px;
+}
+.iti-flag.nz {
+    height: 10px;
+    background-position: -3855px 0px;
+}
+.iti-flag.om {
+    height: 10px;
+    background-position: -3877px 0px;
+}
+.iti-flag.pa {
+    height: 14px;
+    background-position: -3899px 0px;
+}
+.iti-flag.pe {
+    height: 14px;
+    background-position: -3921px 0px;
+}
+.iti-flag.pf {
+    height: 14px;
+    background-position: -3943px 0px;
+}
+.iti-flag.pg {
+    height: 15px;
+    background-position: -3965px 0px;
+}
+.iti-flag.ph {
+    height: 10px;
+    background-position: -3987px 0px;
+}
+.iti-flag.pk {
+    height: 14px;
+    background-position: -4009px 0px;
+}
+.iti-flag.pl {
+    height: 13px;
+    background-position: -4031px 0px;
+}
+.iti-flag.pm {
+    height: 14px;
+    background-position: -4053px 0px;
+}
+.iti-flag.pn {
+    height: 10px;
+    background-position: -4075px 0px;
+}
+.iti-flag.pr {
+    height: 14px;
+    background-position: -4097px 0px;
+}
+.iti-flag.ps {
+    height: 10px;
+    background-position: -4119px 0px;
+}
+.iti-flag.pt {
+    height: 14px;
+    background-position: -4141px 0px;
+}
+.iti-flag.pw {
+    height: 13px;
+    background-position: -4163px 0px;
+}
+.iti-flag.py {
+    height: 11px;
+    background-position: -4185px 0px;
+}
+.iti-flag.qa {
+    height: 8px;
+    background-position: -4207px 0px;
+}
+.iti-flag.re {
+    height: 14px;
+    background-position: -4229px 0px;
+}
+.iti-flag.ro {
+    height: 14px;
+    background-position: -4251px 0px;
+}
+.iti-flag.rs {
+    height: 14px;
+    background-position: -4273px 0px;
+}
+.iti-flag.ru {
+    height: 14px;
+    background-position: -4295px 0px;
+}
+.iti-flag.rw {
+    height: 14px;
+    background-position: -4317px 0px;
+}
+.iti-flag.sa {
+    height: 14px;
+    background-position: -4339px 0px;
+}
+.iti-flag.sb {
+    height: 10px;
+    background-position: -4361px 0px;
+}
+.iti-flag.sc {
+    height: 10px;
+    background-position: -4383px 0px;
+}
+.iti-flag.sd {
+    height: 10px;
+    background-position: -4405px 0px;
+}
+.iti-flag.se {
+    height: 13px;
+    background-position: -4427px 0px;
+}
+.iti-flag.sg {
+    height: 14px;
+    background-position: -4449px 0px;
+}
+.iti-flag.sh {
+    height: 10px;
+    background-position: -4471px 0px;
+}
+.iti-flag.si {
+    height: 10px;
+    background-position: -4493px 0px;
+}
+.iti-flag.sj {
+    height: 15px;
+    background-position: -4515px 0px;
+}
+.iti-flag.sk {
+    height: 14px;
+    background-position: -4537px 0px;
+}
+.iti-flag.sl {
+    height: 14px;
+    background-position: -4559px 0px;
+}
+.iti-flag.sm {
+    height: 15px;
+    background-position: -4581px 0px;
+}
+.iti-flag.sn {
+    height: 14px;
+    background-position: -4603px 0px;
+}
+.iti-flag.so {
+    height: 14px;
+    background-position: -4625px 0px;
+}
+.iti-flag.sr {
+    height: 14px;
+    background-position: -4647px 0px;
+}
+.iti-flag.ss {
+    height: 10px;
+    background-position: -4669px 0px;
+}
+.iti-flag.st {
+    height: 10px;
+    background-position: -4691px 0px;
+}
+.iti-flag.sv {
+    height: 12px;
+    background-position: -4713px 0px;
+}
+.iti-flag.sx {
+    height: 14px;
+    background-position: -4735px 0px;
+}
+.iti-flag.sy {
+    height: 14px;
+    background-position: -4757px 0px;
+}
+.iti-flag.sz {
+    height: 14px;
+    background-position: -4779px 0px;
+}
+.iti-flag.ta {
+    height: 10px;
+    background-position: -4801px 0px;
+}
+.iti-flag.tc {
+    height: 10px;
+    background-position: -4823px 0px;
+}
+.iti-flag.td {
+    height: 14px;
+    background-position: -4845px 0px;
+}
+.iti-flag.tf {
+    height: 14px;
+    background-position: -4867px 0px;
+}
+.iti-flag.tg {
+    height: 13px;
+    background-position: -4889px 0px;
+}
+.iti-flag.th {
+    height: 14px;
+    background-position: -4911px 0px;
+}
+.iti-flag.tj {
+    height: 10px;
+    background-position: -4933px 0px;
+}
+.iti-flag.tk {
+    height: 10px;
+    background-position: -4955px 0px;
+}
+.iti-flag.tl {
+    height: 10px;
+    background-position: -4977px 0px;
+}
+.iti-flag.tm {
+    height: 14px;
+    background-position: -4999px 0px;
+}
+.iti-flag.tn {
+    height: 14px;
+    background-position: -5021px 0px;
+}
+.iti-flag.to {
+    height: 10px;
+    background-position: -5043px 0px;
+}
+.iti-flag.tr {
+    height: 14px;
+    background-position: -5065px 0px;
+}
+.iti-flag.tt {
+    height: 12px;
+    background-position: -5087px 0px;
+}
+.iti-flag.tv {
+    height: 10px;
+    background-position: -5109px 0px;
+}
+.iti-flag.tw {
+    height: 14px;
+    background-position: -5131px 0px;
+}
+.iti-flag.tz {
+    height: 14px;
+    background-position: -5153px 0px;
+}
+.iti-flag.ua {
+    height: 14px;
+    background-position: -5175px 0px;
+}
+.iti-flag.ug {
+    height: 14px;
+    background-position: -5197px 0px;
+}
+.iti-flag.um {
+    height: 11px;
+    background-position: -5219px 0px;
+}
+.iti-flag.us {
+    height: 11px;
+    background-position: -5241px 0px;
+}
+.iti-flag.uy {
+    height: 14px;
+    background-position: -5263px 0px;
+}
+.iti-flag.uz {
+    height: 10px;
+    background-position: -5285px 0px;
+}
+.iti-flag.va {
+    height: 15px;
+    background-position: -5307px 0px;
+}
+.iti-flag.vc {
+    height: 14px;
+    background-position: -5324px 0px;
+}
+.iti-flag.ve {
+    height: 14px;
+    background-position: -5346px 0px;
+}
+.iti-flag.vg {
+    height: 10px;
+    background-position: -5368px 0px;
+}
+.iti-flag.vi {
+    height: 14px;
+    background-position: -5390px 0px;
+}
+.iti-flag.vn {
+    height: 14px;
+    background-position: -5412px 0px;
+}
+.iti-flag.vu {
+    height: 12px;
+    background-position: -5434px 0px;
+}
+.iti-flag.wf {
+    height: 14px;
+    background-position: -5456px 0px;
+}
+.iti-flag.ws {
+    height: 10px;
+    background-position: -5478px 0px;
+}
+.iti-flag.xk {
+    height: 15px;
+    background-position: -5500px 0px;
+}
+.iti-flag.ye {
+    height: 14px;
+    background-position: -5522px 0px;
+}
+.iti-flag.yt {
+    height: 14px;
+    background-position: -5544px 0px;
+}
+.iti-flag.za {
+    height: 14px;
+    background-position: -5566px 0px;
+}
+.iti-flag.zm {
+    height: 14px;
+    background-position: -5588px 0px;
+}
+.iti-flag.zw {
+    height: 10px;
+    background-position: -5610px 0px;
+}
+.iti-flag {
+    width: 20px;
+    height: 15px;
+    box-shadow: 0px 0px 1px 0px #888;
+    background-image: url("../img/flags.png");
+    background-repeat: no-repeat;
+    background-color: #DBDBDB;
+    background-position: 20px 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .iti-flag {
+        background-image: url("../img/flags@2x.png");
+   }
+}
+.iti-flag.np {
+    background-color: transparent;
+}
+
+
+
+.input-group > .intl-tel-input.allow-dropdown {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%;
+  }
+  
+  .input-group > .intl-tel-input.allow-dropdown > .flag-container {
+      z-index: 4;
+  }
+  
+  .iti-flag {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/img/flags.png");
+  }
+  
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      .iti-flag {
+        background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/img/flags@2x.png");
+      }
+  }
