@@ -1,0 +1,110 @@
+খুব ভালো প্রশ্ন!
+আপনি যেহেতু একটি MySQL container আগে থেকেই চালু করেছেন, তাই নতুন Laravel প্রজেক্ট deploy করতে চাইলে ওই একই MySQL server-কে reuse করতে পারবেন, শুধু নতুন database, user এবং password setup করতে হবে।
+
+এটা করার সঠিক প্রক্রিয়া ধাপে ধাপে ব্যাখ্যা করছি:
+
+✅ Step 1: আগের MySQL container details
+ধরি আপনার আগের docker-compose.yml বা MySQL service এর নাম db
+সাধারণত MySQL এর default port 👉 3306
+
+✅ Step 2: নতুন database, user, password তৈরি করুন
+🔑 পদ্ধতি ১: Docker exec দিয়ে
+1️⃣ MySQL container এর নাম জেনে নিন:
+
+bash
+Copy
+Edit
+docker ps
+ধরি, আপনার container এর নাম mysql_db
+
+2️⃣ MySQL container এ ঢুকুন:
+
+bash
+Copy
+Edit
+docker exec -it mysql_db mysql -u root -p
+root এর password দিন (আপনি আগের MYSQL_ROOT_PASSWORD কী দিয়েছেন সেটা)
+
+3️⃣ নতুন database, user তৈরি করুন:
+
+sql
+Copy
+Edit
+CREATE DATABASE abc;
+CREATE USER 'dev1'@'%' IDENTIFIED BY 'Time@12345';
+GRANT ALL PRIVILEGES ON abc.* TO 'dev1'@'%';
+FLUSH PRIVILEGES;
+✅ Step 3: নতুন Laravel প্রজেক্টের .env ফাইল configure করুন
+নতুন Laravel এর .env ফাইলে এইভাবে database config দিন:
+
+env
+Copy
+Edit
+DB_CONNECTION=mysql
+DB_HOST=db          # ⚠️ আপনার MySQL container এর service name (যেমন: db)
+DB_PORT=3306
+DB_DATABASE=abc
+DB_USERNAME=dev1
+DB_PASSWORD=Time@12345
+👉 DB_HOST = আগের MySQL container এর সার্ভিস নাম
+
+যদি আপনার নতুন Laravel প্রজেক্ট আর MySQL একই Docker network এ থাকে, তাহলে service name ঠিকঠাক রাখতে হবে (যেমন db)
+
+✅ Step 4: নতুন Laravel এর docker-compose.yml
+আপনার নতুন Laravel এর docker-compose.yml ফাইল এ MySQL container define করতে হবে না।
+শুধু depends_on দিয়ে আগের db এর উপর dependency দেখাতে পারেন:
+
+yaml
+Copy
+Edit
+version: "3.8"
+
+services:
+  app:
+    build: .
+    container_name: laravel_app
+    working_dir: /var/www
+    volumes:
+      - .:/var/www
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_DATABASE=abc
+      - DB_USERNAME=dev1
+      - DB_PASSWORD=Time@12345
+    networks:
+      - laravel_network
+
+  nginx:
+    image: nginx:latest
+    container_name: laravel_nginx
+    volumes:
+      - .:/var/www
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "8082:80"
+    depends_on:
+      - app
+    networks:
+      - laravel_network
+
+networks:
+  laravel_network:
+    external: true
+👉 এখানে networks অংশে আগের MySQL container যে network এ আছে, সেটি external: true দিয়ে যুক্ত করতে হবে।
+
+✅ Step 5: নতুন Laravel app run করুন
+bash
+Copy
+Edit
+docker compose up -d
+📌 মূল কথা
+আগের MySQL container একই থাকবে।
+
+নতুন Laravel প্রজেক্টের .env তে নতুন database name, user/password দিবেন।
+
+নতুন Laravel container আগের network এ থাকবে যাতে MySQL access করতে পারে।
+
+🚀 চাইলে আমি আপনার জন্য পুরো নতুন docker-compose.yml আর .env টেম্পলেট বানিয়ে দিতে পারি!
